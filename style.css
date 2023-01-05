@@ -8,15 +8,26 @@
     padding: 0;
 }body{
     font-family: 'Poppins', sans-serif;
-    color: var(--LightGray);
+    color: var(--DarkGray);
     background-color: var(--WhiteSmoke);
 }header{
     background-color: var(--Purple);
-}.contact{
+    
+}nav{
+    display: flex;
+    flex-direction: row-reverse;
+    color: var(--LightGray);
+    
+}nav li{
+    list-style-type: none;
+    padding: 0.2rem 1rem;
+}
+
+.contact{
     background-color: var(--Purple);   
     text-align: center;
 }.contact h1{
-    color: var(--DarkGray);
+    color: var(--LightGray);
     font-size: 2rem;
 }.contact h2{
     font-weight: 100;
@@ -24,23 +35,68 @@
     padding-bottom: 1rem;
 }.contact img{
     width: 40px;
-}.about{
-    padding: 2rem;
+}.skills{
+    text-align: center;
+    padding: 1rem;
+}.skillIcon{
+    width: 70px;
+}.about, .projects{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }.boxes{
     display: grid;
     grid-template-columns: 1fr 1fr;
+}.boxYellow{
+    background-color: #766BD6;
+    width: 150px;
+    height: 150px;
+    margin: .5rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: .5rem;
+}.boxYellow p, .boxRed p{
+    font-size: .9rem;
+    text-align: center;
+    padding: .2rem;
+    margin: auto;
+}.boxRed{
+    background-color: #D6A281;
+    width: 150px;
+    height: 150px;
+    margin: .5rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}.boxRed a {
+    text-decoration: none;
+}.btn{
+    padding: .5rem;
+    border-radius: .5rem;
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #766BD6;
+    margin-bottom: .5rem;
+    
+    
+}.btn a{
+    color: var(--WhiteSmoke);
 }
 
-.box{
-    background-color: rgb(240, 240, 124);
-    width: 200px;
-    height: 200px;
-    margin: .5rem;
+.credits{
+    font-size: .6rem;
+    padding: .5rem;
 }
 
 
 footer{
     background-color: var(--DarkGray);
+    color: var(--LightGray);
     text-align: center;
     font-size: .8rem;
     padding: .5rem;
